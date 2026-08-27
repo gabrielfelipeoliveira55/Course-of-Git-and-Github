@@ -54,7 +54,7 @@
 
 | Situação | Sem Git | Com Git |
 |---|---|---|
-| Cada profissional cria sua versão | Arquivos soltos, tipo `formulario_v1.docx`, `formulario_maria_final.docx`, `formulario_FINAL_USAR_ESSE.docx` | Cada um trabalha em sua própria ramificação (branch), isolada das demais, dentro do mesmo repositório |
+| Cada profissional cria sua versão | Arquivos soltos, tipo `formulario_v1.html`, `formulario_maria_final.html`, `formulario_FINAL_USAR_ESSE.html` | Cada um trabalha em sua própria ramificação (branch), isolada das demais, dentro do mesmo repositório |
 | Comparar as 4 versões | O chefe precisa abrir os 4 arquivos manualmente e comparar visualmente, um por um | O chefe visualiza as 4 ramificações lado a lado, cada uma com seu histórico completo de alterações |
 | Alguém não gosta do resultado e quer voltar à versão anterior | Precisa lembrar de cabeça como estava antes e **reescrever tudo do zero, à mão** — sem garantia de acertar exatamente igual | Basta **um único comando**: a versão anterior volta exatamente como estava, sem reescrever nada |
 | Trabalho sem internet | Depende do arquivo estar salvo localmente e ser sincronizado manualmente depois | Cada colaborador tem uma cópia completa do repositório e do histórico, funcionando offline normalmente |
