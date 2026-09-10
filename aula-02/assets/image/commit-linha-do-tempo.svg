@@ -1,0 +1,74 @@
+<svg viewBox="0 0 900 900" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <radialGradient id="bgGrad3" cx="50%" cy="40%" r="80%">
+      <stop offset="0%" stop-color="#212121"/>
+      <stop offset="60%" stop-color="#1a1a1a"/>
+      <stop offset="100%" stop-color="#191919"/>
+    </radialGradient>
+    <marker id="arrowHead" markerWidth="10" markerHeight="10" refX="5" refY="8" orient="auto">
+      <path d="M0,0 L10,0 L5,9 Z" fill="#A78BFA"/>
+    </marker>
+  </defs>
+  <rect width="900" height="900" fill="url(#bgGrad3)"/>
+
+  <text x="450" y="46" text-anchor="middle" font-size="24" font-weight="700" fill="#F8FAFC">Linha do Tempo de Commits</text>
+  <text x="450" y="70" text-anchor="middle" font-size="13.5" fill="#A1A1AA">Assim que o histórico aparece no "git log" e nas telas do GitHub</text>
+
+  <!-- HEAD / main pointer -->
+  <rect x="60" y="92" width="105" height="30" rx="8" fill="#2E1065" stroke="#A78BFA" stroke-width="1.5"/>
+  <text x="112" y="112" text-anchor="middle" font-size="12" font-weight="700" fill="#DDD6FE">HEAD → main</text>
+  <path d="M 112 122 L 112 148" stroke="#A78BFA" stroke-width="2.5" marker-end="url(#arrowHead)"/>
+
+  <!-- linha vertical do tempo -->
+  <line x1="112" y1="165" x2="112" y2="795" stroke="#3F3F46" stroke-width="4"/>
+
+  <!-- commit 1 (mais recente) -->
+  <circle cx="112" cy="180" r="15" fill="#10B981" stroke="#191919" stroke-width="4"/>
+  <rect x="152" y="135" width="680" height="88" rx="14" fill="#212121" stroke="#10B981" stroke-width="1.5" opacity="0.95"/>
+  <rect x="170" y="152" width="112" height="24" rx="6" fill="#171717" stroke="#10B981"/>
+  <text x="226" y="169" text-anchor="middle" font-size="12" font-family="Consolas, monospace" fill="#6EE7B7">a3f9e21</text>
+  <text x="170" y="200" font-size="15.5" font-weight="700" fill="#F8FAFC">feat: adiciona validação de e-mail no cadastro</text>
+  <text x="170" y="220" font-size="11.5" fill="#A1A1AA">Gabriel Rateiro  •  2 horas atrás</text>
+
+  <!-- commit 2 -->
+  <circle cx="112" cy="330" r="15" fill="#F97316" stroke="#191919" stroke-width="4"/>
+  <rect x="152" y="285" width="680" height="88" rx="14" fill="#212121" stroke="#F97316" stroke-width="1.5" opacity="0.95"/>
+  <rect x="170" y="302" width="112" height="24" rx="6" fill="#171717" stroke="#F97316"/>
+  <text x="226" y="319" text-anchor="middle" font-size="12" font-family="Consolas, monospace" fill="#FDBA74">9b2c410</text>
+  <text x="170" y="350" font-size="15.5" font-weight="700" fill="#F8FAFC">fix: corrige erro de digitação no README</text>
+  <text x="170" y="370" font-size="11.5" fill="#A1A1AA">Gabriel Rateiro  •  1 dia atrás</text>
+
+  <!-- commit 3 -->
+  <circle cx="112" cy="480" r="15" fill="#10B981" stroke="#191919" stroke-width="4"/>
+  <rect x="152" y="435" width="680" height="88" rx="14" fill="#212121" stroke="#10B981" stroke-width="1.5" opacity="0.95"/>
+  <rect x="170" y="452" width="112" height="24" rx="6" fill="#171717" stroke="#10B981"/>
+  <text x="226" y="469" text-anchor="middle" font-size="12" font-family="Consolas, monospace" fill="#6EE7B7">e77d0aa</text>
+  <text x="170" y="500" font-size="15.5" font-weight="700" fill="#F8FAFC">feat: implementa tela de login</text>
+  <text x="170" y="520" font-size="11.5" fill="#A1A1AA">Gabriel Rateiro  •  3 dias atrás</text>
+
+  <!-- commit 4 -->
+  <circle cx="112" cy="630" r="15" fill="#3B82F6" stroke="#191919" stroke-width="4"/>
+  <rect x="152" y="585" width="680" height="88" rx="14" fill="#212121" stroke="#3B82F6" stroke-width="1.5" opacity="0.95"/>
+  <rect x="170" y="602" width="112" height="24" rx="6" fill="#171717" stroke="#3B82F6"/>
+  <text x="226" y="619" text-anchor="middle" font-size="12" font-family="Consolas, monospace" fill="#93C5FD">4f1a8c3</text>
+  <text x="170" y="650" font-size="15.5" font-weight="700" fill="#F8FAFC">chore: configura ESLint e Prettier</text>
+  <text x="170" y="670" font-size="11.5" fill="#A1A1AA">Gabriel Rateiro  •  5 dias atrás</text>
+
+  <!-- commit 5 (o primeiro commit do projeto) -->
+  <circle cx="112" cy="780" r="15" fill="#A78BFA" stroke="#191919" stroke-width="4"/>
+  <rect x="152" y="735" width="680" height="88" rx="14" fill="#212121" stroke="#A78BFA" stroke-width="1.5" opacity="0.95"/>
+  <rect x="170" y="752" width="112" height="24" rx="6" fill="#171717" stroke="#A78BFA"/>
+  <text x="226" y="769" text-anchor="middle" font-size="12" font-family="Consolas, monospace" fill="#DDD6FE">000a1b2</text>
+  <text x="170" y="800" font-size="15.5" font-weight="700" fill="#F8FAFC">Initial commit</text>
+  <text x="170" y="820" font-size="11.5" fill="#A1A1AA">Gabriel Rateiro  •  2 semanas atrás  •  commit raiz (sem pai)</text>
+
+  <!-- legenda -->
+  <circle cx="200" cy="865" r="7" fill="#10B981"/>
+  <text x="215" y="869" font-size="11.5" fill="#D4D4D8">feat (nova funcionalidade)</text>
+  <circle cx="410" cy="865" r="7" fill="#F97316"/>
+  <text x="425" y="869" font-size="11.5" fill="#D4D4D8">fix (correção de bug)</text>
+  <circle cx="590" cy="865" r="7" fill="#3B82F6"/>
+  <text x="605" y="869" font-size="11.5" fill="#D4D4D8">chore (manutenção)</text>
+  <circle cx="770" cy="865" r="7" fill="#A78BFA"/>
+  <text x="785" y="869" font-size="11.5" fill="#D4D4D8">commit inicial</text>
+</svg>

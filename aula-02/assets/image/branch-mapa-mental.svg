@@ -1,0 +1,74 @@
+<svg viewBox="0 0 1000 800" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="45%" r="75%">
+      <stop offset="0%" stop-color="#212121"/>
+      <stop offset="60%" stop-color="#1a1a1a"/>
+      <stop offset="100%" stop-color="#191919"/>
+    </radialGradient>
+  </defs>
+  <rect width="1000" height="800" fill="url(#bgGrad)"/>
+
+  <text x="500" y="42" text-anchor="middle" font-size="26" font-weight="700" fill="#F8FAFC">Mapa Mental: O Conceito de Branch</text>
+  <text x="500" y="66" text-anchor="middle" font-size="14" fill="#A1A1AA">Uma linha paralela, um ponteiro, um nome e um caminho de volta</text>
+
+  <!-- linhas de conexão -->
+  <path d="M 445 340 Q 320 230 210 195" fill="none" stroke="#06B6D4" stroke-width="5" opacity="0.75" stroke-linecap="round"/>
+  <path d="M 560 335 Q 690 230 790 195" fill="none" stroke="#F59E0B" stroke-width="5" opacity="0.75" stroke-linecap="round"/>
+  <path d="M 435 460 Q 300 570 205 605" fill="none" stroke="#3B82F6" stroke-width="5" opacity="0.75" stroke-linecap="round"/>
+  <path d="M 565 460 Q 700 570 795 605" fill="none" stroke="#EC4899" stroke-width="5" opacity="0.75" stroke-linecap="round"/>
+  <path d="M 500 490 Q 500 600 500 645" fill="none" stroke="#10B981" stroke-width="5" opacity="0.75" stroke-linecap="round"/>
+
+  <!-- nó central -->
+  <circle cx="500" cy="400" r="92" fill="#4C1D95"/>
+  <circle cx="500" cy="400" r="92" fill="none" stroke="#A78BFA" stroke-width="3"/>
+  <text x="500" y="394" text-anchor="middle" font-size="26" font-weight="700" fill="#FFFFFF">BRANCH</text>
+  <text x="500" y="418" text-anchor="middle" font-size="12" fill="#DDD6FE">uma linha do tempo paralela</text>
+
+  <!-- nó 1: linha paralela (topo-esquerda, ciano) -->
+  <circle cx="200" cy="160" r="70" fill="#06B6D4"/>
+  <text x="200" y="150" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">🧵 Linha</text>
+  <text x="200" y="170" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">Paralela</text>
+  <text x="200" y="256" text-anchor="middle" font-size="12.5" fill="#A5F3FC">
+    <tspan x="200" dy="0">Nasce a partir de um</tspan>
+    <tspan x="200" dy="16">commit específico, sem</tspan>
+    <tspan x="200" dy="16">apagar a linha original.</tspan>
+  </text>
+
+  <!-- nó 2: ponteiro (topo-direita, amber) -->
+  <circle cx="800" cy="160" r="70" fill="#F59E0B"/>
+  <text x="800" y="150" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">📍 É um</text>
+  <text x="800" y="170" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">Ponteiro</text>
+  <text x="800" y="256" text-anchor="middle" font-size="12.5" fill="#FDE68A">
+    <tspan x="800" dy="0">Não copia arquivos: só</tspan>
+    <tspan x="800" dy="16">aponta para um commit</tspan>
+    <tspan x="800" dy="16">e se move com você.</tspan>
+  </text>
+
+  <!-- nó 3: protege a main (baixo-esquerda, azul) -->
+  <circle cx="185" cy="620" r="70" fill="#3B82F6"/>
+  <text x="185" y="612" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">🛡️ Protege</text>
+  <text x="185" y="632" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">a Main</text>
+  <text x="185" y="530" text-anchor="middle" font-size="12.5" fill="#BFDBFE">
+    <tspan x="185" dy="0">Você testa e quebra</tspan>
+    <tspan x="185" dy="16">coisas na branch, sem</tspan>
+    <tspan x="185" dy="16">arriscar o código estável.</tspan>
+  </text>
+
+  <!-- nó 4: pode se reunir (baixo-direita, rosa) -->
+  <circle cx="815" cy="620" r="70" fill="#EC4899"/>
+  <text x="815" y="612" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">🔀 Pode se</text>
+  <text x="815" y="632" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">Reunir</text>
+  <text x="815" y="530" text-anchor="middle" font-size="12.5" fill="#FBCFE8">
+    <tspan x="815" dy="0">Quando pronta, pode ser</tspan>
+    <tspan x="815" dy="16">mesclada (merge) de volta</tspan>
+    <tspan x="815" dy="16">na linha principal.</tspan>
+  </text>
+
+  <!-- nó 5: tem um nome (base, verde) -->
+  <circle cx="500" cy="700" r="65" fill="#10B981"/>
+  <text x="500" y="692" text-anchor="middle" font-size="13" font-weight="700" fill="#F8FAFC">🏷️ Tem um</text>
+  <text x="500" y="710" text-anchor="middle" font-size="13" font-weight="700" fill="#F8FAFC">Nome</text>
+  <text x="500" y="770" text-anchor="middle" font-size="12.5" fill="#A7F3D0">
+    <tspan x="500" dy="0">Normalmente descreve a intenção: feature/login, fix/bug-checkout.</tspan>
+  </text>
+</svg>

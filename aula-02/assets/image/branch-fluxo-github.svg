@@ -1,0 +1,110 @@
+<svg viewBox="0 0 1200 640" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <radialGradient id="bgGrad4" cx="50%" cy="40%" r="80%">
+      <stop offset="0%" stop-color="#212121"/>
+      <stop offset="60%" stop-color="#1a1a1a"/>
+      <stop offset="100%" stop-color="#191919"/>
+    </radialGradient>
+    <marker id="arrowHead2" markerWidth="10" markerHeight="10" refX="5" refY="8" orient="auto">
+      <path d="M0,0 L10,0 L5,9 Z" fill="#C4B5FD"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="640" fill="url(#bgGrad4)"/>
+
+  <text x="600" y="42" text-anchor="middle" font-size="24" font-weight="700" fill="#F8FAFC">Branch e Merge: Como Você Vai Ver no GitHub</text>
+  <text x="600" y="66" text-anchor="middle" font-size="13.5" fill="#A1A1AA">A linha "main" segue reta enquanto a "feature/login" se ramifica e volta</text>
+
+  <!-- tag HEAD -->
+  <rect x="1015" y="96" width="105" height="28" rx="8" fill="#2E1065" stroke="#A78BFA" stroke-width="1.5"/>
+  <text x="1067" y="115" text-anchor="middle" font-size="11.5" font-weight="700" fill="#DDD6FE">HEAD → main</text>
+  <path d="M 1067 124 L 1067 148" stroke="#A78BFA" stroke-width="2.5" marker-end="url(#arrowHead2)"/>
+
+  <!-- tag main (início da linha) -->
+  <rect x="40" y="150" width="66" height="24" rx="7" fill="#2E1065" stroke="#C4B5FD" stroke-width="1.2"/>
+  <text x="73" y="167" text-anchor="middle" font-size="11" font-weight="700" fill="#DDD6FE">main</text>
+
+  <!-- tag feature/login -->
+  <rect x="345" y="360" width="118" height="24" rx="7" fill="#083344" stroke="#22D3EE" stroke-width="1.2"/>
+  <text x="404" y="377" text-anchor="middle" font-size="11" font-weight="700" fill="#A5F3FC">feature/login</text>
+
+  <!-- linha principal (main) -->
+  <line x1="70" y1="260" x2="1090" y2="260" stroke="#C4B5FD" stroke-width="4"/>
+
+  <!-- curva da feature: diverge e retorna -->
+  <path d="M 250 260 C 300 260 300 400 350 400 L 680 400 C 730 400 730 260 760 260"
+        fill="none" stroke="#22D3EE" stroke-width="4"/>
+
+  <!-- anotação do ponto de ramificação -->
+  <text x="250" y="300" text-anchor="middle" font-size="11" fill="#67E8F9">🌿 cria feature/login aqui</text>
+
+  <!-- ====== COMMITS NA MAIN ====== -->
+
+  <!-- C1: Initial commit -->
+  <circle cx="90" cy="260" r="12" fill="#C4B5FD" stroke="#191919" stroke-width="3"/>
+  <line x1="90" y1="248" x2="90" y2="205" stroke="#52525B" stroke-width="1.5"/>
+  <rect x="45" y="180" width="90" height="22" rx="6" fill="#171717" stroke="#C4B5FD"/>
+  <text x="90" y="195" text-anchor="middle" font-size="11" font-family="Consolas, monospace" fill="#DDD6FE">000a1b2</text>
+  <text x="90" y="218" text-anchor="middle" font-size="11" fill="#E4E4E7">Initial commit</text>
+
+  <!-- C2: branch point -->
+  <circle cx="250" cy="260" r="12" fill="#C4B5FD" stroke="#191919" stroke-width="3"/>
+  <line x1="250" y1="248" x2="250" y2="205" stroke="#52525B" stroke-width="1.5"/>
+  <rect x="200" y="180" width="100" height="22" rx="6" fill="#171717" stroke="#C4B5FD"/>
+  <text x="250" y="195" text-anchor="middle" font-size="11" font-family="Consolas, monospace" fill="#DDD6FE">4f1a8c3</text>
+  <text x="250" y="218" text-anchor="middle" font-size="11" fill="#E4E4E7">chore: ESLint + Prettier</text>
+
+  <!-- Cmid: commit paralelo na main -->
+  <circle cx="560" cy="260" r="12" fill="#C4B5FD" stroke="#191919" stroke-width="3"/>
+  <line x1="560" y1="248" x2="560" y2="205" stroke="#52525B" stroke-width="1.5"/>
+  <rect x="510" y="180" width="100" height="22" rx="6" fill="#171717" stroke="#C4B5FD"/>
+  <text x="560" y="195" text-anchor="middle" font-size="11" font-family="Consolas, monospace" fill="#DDD6FE">7d2e9f0</text>
+  <text x="560" y="218" text-anchor="middle" font-size="11" fill="#E4E4E7">docs: atualiza licença</text>
+
+  <!-- M: merge commit (2 pais) -->
+  <circle cx="760" cy="260" r="15" fill="#191919" stroke="#22D3EE" stroke-width="3"/>
+  <circle cx="760" cy="260" r="7" fill="#C4B5FD"/>
+  <line x1="760" y1="245" x2="760" y2="205" stroke="#52525B" stroke-width="1.5"/>
+  <rect x="700" y="170" width="120" height="22" rx="6" fill="#171717" stroke="#22D3EE"/>
+  <text x="760" y="185" text-anchor="middle" font-size="11" font-family="Consolas, monospace" fill="#A5F3FC">e77d0aa</text>
+  <text x="760" y="203" text-anchor="middle" font-size="11" fill="#E4E4E7">Merge: feature/login</text>
+  <text x="760" y="217" text-anchor="middle" font-size="10" fill="#67E8F9">(commit com 2 pais)</text>
+
+  <!-- C5 -->
+  <circle cx="910" cy="260" r="12" fill="#C4B5FD" stroke="#191919" stroke-width="3"/>
+  <line x1="910" y1="248" x2="910" y2="205" stroke="#52525B" stroke-width="1.5"/>
+  <rect x="855" y="180" width="110" height="22" rx="6" fill="#171717" stroke="#C4B5FD"/>
+  <text x="910" y="195" text-anchor="middle" font-size="11" font-family="Consolas, monospace" fill="#DDD6FE">9b2c410</text>
+  <text x="910" y="218" text-anchor="middle" font-size="11" fill="#E4E4E7">fix: typo no README</text>
+
+  <!-- C6: tip / HEAD -->
+  <circle cx="1070" cy="260" r="12" fill="#C4B5FD" stroke="#191919" stroke-width="3"/>
+  <line x1="1070" y1="248" x2="1070" y2="205" stroke="#52525B" stroke-width="1.5"/>
+  <rect x="1013" y="180" width="114" height="22" rx="6" fill="#171717" stroke="#C4B5FD"/>
+  <text x="1070" y="195" text-anchor="middle" font-size="11" font-family="Consolas, monospace" fill="#DDD6FE">a3f9e21</text>
+  <text x="1070" y="218" text-anchor="middle" font-size="11" fill="#E4E4E7">feat: valida e-mail</text>
+
+  <!-- ====== COMMITS NA FEATURE/LOGIN ====== -->
+
+  <!-- F1 -->
+  <circle cx="420" cy="400" r="12" fill="#22D3EE" stroke="#191919" stroke-width="3"/>
+  <line x1="420" y1="412" x2="420" y2="455" stroke="#52525B" stroke-width="1.5"/>
+  <rect x="365" y="459" width="110" height="22" rx="6" fill="#171717" stroke="#22D3EE"/>
+  <text x="420" y="474" text-anchor="middle" font-size="11" font-family="Consolas, monospace" fill="#A5F3FC">c1a4e88</text>
+  <text x="420" y="496" text-anchor="middle" font-size="11" fill="#E4E4E7">feat: cria formulário</text>
+
+  <!-- F2 -->
+  <circle cx="610" cy="400" r="12" fill="#22D3EE" stroke="#191919" stroke-width="3"/>
+  <line x1="610" y1="412" x2="610" y2="455" stroke="#52525B" stroke-width="1.5"/>
+  <rect x="555" y="459" width="110" height="22" rx="6" fill="#171717" stroke="#22D3EE"/>
+  <text x="610" y="474" text-anchor="middle" font-size="11" font-family="Consolas, monospace" fill="#A5F3FC">b6f0d32</text>
+  <text x="610" y="496" text-anchor="middle" font-size="11" fill="#E4E4E7">feat: valida campos</text>
+
+  <!-- legenda -->
+  <line x1="330" y1="580" x2="370" y2="580" stroke="#C4B5FD" stroke-width="4"/>
+  <text x="380" y="584" font-size="12" fill="#D4D4D8">main</text>
+  <line x1="460" y1="580" x2="500" y2="580" stroke="#22D3EE" stroke-width="4"/>
+  <text x="510" y="584" font-size="12" fill="#D4D4D8">feature/login</text>
+  <circle cx="650" cy="580" r="9" fill="#191919" stroke="#22D3EE" stroke-width="2.5"/>
+  <circle cx="650" cy="580" r="4" fill="#C4B5FD"/>
+  <text x="668" y="584" font-size="12" fill="#D4D4D8">commit de merge (2 pais)</text>
+</svg>
